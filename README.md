@@ -12,9 +12,15 @@ The purpose of this project is to complete exploratory data analysis on publicly
 * Obtain a view of small, vs. mid, vs. large-cap firms and assess their market performance comparitively
 * Obtain a high-level view of select ETF performance
 
+## Transformations
+
+Our original dataset only has Ticker values for each security. To improve the readability, I've brought in a column that has the name of the company associated with each ticker. This can be accomplished using the separate dataframe from EOD Data and performing an INNER join on the Ticker symbol.
 
 ## High Level Snapshot
 
+\
+\
+\
 
 ## Market Sector Breakdown
-![SectorStockVolum](/figures/StockVolume_Sector.png)
+![SectorStockVolum](figures/StockVolume_Sector.png)
