@@ -9,3 +9,10 @@ The purpose of this project is to complete exploratory data analysis on publicly
 * Break down dataset into sectors. Find sectors of the market are most profitable, those which spend the most on R&D, etc
 * Obtain a view of small, vs. mid, vs. large-cap firms and assess their market performance comparitively
 * Obtain a high-level view of select ETF performance
+
+
+## High Level Snapshot
+
+
+## Market Sector Breakdown
+![SectorStockVolum](/Users/danvaldes/Desktop/bootcamp/stock-eda/figures/StockVolume_Sector.png)
