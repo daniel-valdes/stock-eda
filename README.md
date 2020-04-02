@@ -1,5 +1,5 @@
 # EDA on Publicly Traded Stocks (2014-2018)
-Datasets used: \
+**Datasets used**: \
 Indicators: https://www.kaggle.com/cnic92/200-financial-indicators-of-us-stocks-20142018 \
 Tickers: http://eoddata.com/symbols.aspx
 
@@ -20,7 +20,8 @@ Our original dataset only has Ticker values for each security. To improve the re
 
 \
 \
-\
 
 ## Market Sector Breakdown
 ![SectorStockVolum](figures/StockVolume_Sector.png)
+
+We can see that the largest portion of stocks traded were those of finance, healthcare, and tech. Very few of the stocks listed were those of communications and utility companies.
