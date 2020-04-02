@@ -17,4 +17,4 @@ The purpose of this project is to complete exploratory data analysis on publicly
 
 
 ## Market Sector Breakdown
-![SectorStockVolum](/Users/danvaldes/Desktop/bootcamp/stock-eda/figures/StockVolume_Sector.png)
+![SectorStockVolum](/figures/StockVolume_Sector.png)
