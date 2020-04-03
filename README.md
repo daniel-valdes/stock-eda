@@ -3,7 +3,7 @@
 Indicators: https://www.kaggle.com/cnic92/200-financial-indicators-of-us-stocks-20142018 \
 Tickers: http://eoddata.com/symbols.aspx
 
-The purpose of this project is to complete exploratory data analysis on publicly traded stocks in the U.S. and see what insights can be drawn from our datasource. The dataset is quite comprehensive with *226 columns* worth of financial indicators for each stock. All of these indicators come from the companies' yearly 10-K's and cover expenditures, revenues, equity, and relevant ratios.
+The purpose of this project is to complete exploratory data analysis on publicly traded stocks in the U.S. and see what insights can be drawn from our datasource. The dataset is quite comprehensive with *226 columns* worth of financial indicators for each of the 4000+ stocks. All of these indicators come from the companies' yearly 10-K's and cover expenditures, revenues, equity, and relevant ratios. The comapanies listed here come from the three major U.S. exchanges (the NYSE, NASDAQ, and AMEX) and are labeled by  economic sector, i.e Technology, Real Estate, etc.
 
 **Some tasks to be accomplished:**
 
@@ -19,7 +19,7 @@ Our original dataset only has Ticker values for each security. To improve the re
 ## High Level Snapshot
 
 \
-\
+\ \
 
 ## Market Sector Breakdown
 ![SectorStockVolum](figures/StockVolume_Sector.png)
