@@ -23,3 +23,7 @@ Our original dataset only has Ticker values for each security. To improve the re
 ![SectorStockVolum](figures/StockVolume_Sector.png)
 
 We can see that the largest portion of stocks traded were those of finance, healthcare, and tech. Very few of the stocks listed were those of communications and utility companies.
+
+## Thoughts on Machine Learning
+
+There is a column in our dataset PRICE VAR [%] that tells us how the adjusted closing price for the stock shifted for the following year. We can set this to be our target variable *Y* for machine learning purposes. Due to the large amount of features we have to choose from, a neural network may perform well here to learn which features can predict *Y* best.
