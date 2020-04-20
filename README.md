@@ -1,4 +1,7 @@
 # EDA on Publicly Traded Stocks (2014-2018)
+**Tools used**
+Python: Pandas, SeaBorn, Sci-Kit Learn, 
+
 **Datasets used**: \
 Indicators: https://www.kaggle.com/cnic92/200-financial-indicators-of-us-stocks-20142018 \
 Tickers: http://eoddata.com/symbols.aspx
