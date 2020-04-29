@@ -38,3 +38,12 @@ Within the overall cap sizes, we can also create a view to see the proportion of
 ## Thoughts on Machine Learning
 
 There is a column in our dataset PRICE VAR [%] that tells us how the adjusted closing price for the stock shifted for the following year. We can set this to be our target variable *Y* for machine learning purposes. Due to the large amount of features we have to choose from, a neural network may perform well here to learn which features can predict *Y* best. Of course, linear regression can work as well.
+
+
+## Markowitz Portfolio Optimization
+
+The Markowitz model provides us an intuitive framework with which we can analyze stock portfolios. The theory is that through the minimization of risk or internal correlation of a portfolio, one can find an efficient combination of stocks that mitigates volatility and optimizes returns. Markowitz developed the idea of an *efficient frontier* meaning that for a portfolio of stocks with a given volatility, there exists one that can potentially issue higher returns for the same amount of risk.
+
+![diverse](figures/diverse.gif)
+
+It we simulate a diverse portfolio composed of a general representation of the whole market, we can see the efficient frontier take shape. Higher volatility portfolios will yield higher returns. Consequently, higher returns are possible for the same amount of risk depending on the weighting of the portfolio
