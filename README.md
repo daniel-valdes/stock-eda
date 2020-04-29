@@ -46,4 +46,8 @@ The Markowitz model provides us an intuitive framework with which we can analyze
 
 ![diverse](figures/diverse.gif)
 
-It we simulate a diverse portfolio composed of a general representation of the whole market, we can see the efficient frontier take shape. Higher volatility portfolios will yield higher returns. Consequently, higher returns are possible for the same amount of risk depending on the weighting of the portfolio
+If we simulate a diverse portfolio composed of a general representation of the whole market, we can see the efficient frontier take shape. Higher volatility portfolios will yield higher returns. Consequently, higher returns are possible for the same amount of risk depending on the weighting of the portfolio
+
+![tech](figures/tech.gif)
+
+When we simulate a portfolio with only tech stocks, we can see that we achieve substantially higher returns at the cost of substantially higher risk. Our efficient frontier is much more dramatic when he have fewer stocks to choose from. 
