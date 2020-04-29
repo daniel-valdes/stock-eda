@@ -20,15 +20,20 @@ After creating a high level overview of the market, we should look to highlight 
 
 Our original dataset only has Ticker values for each security. To improve the readability, I've brought in a column that has the name of the company associated with each ticker. This can be accomplished using the separate dataframe from EOD Data and performing an INNER join on the Ticker symbol. There is a large amount of missing data in our dataset. Every row has at least one columns with missing information.
 
-## High Level Snapshot
-![MarketCaps](figures/s_caps.png)
-![Mid Caps](figures/m_caps.png)
-![Large Caps](figures/l_caps.png)
-
 ## Market Sector Breakdown
 ![SectorStockVolum](figures/StockVolume_Sector.png)
 
 We can see that the largest portion of stocks traded were those of finance, healthcare, and tech. Very few of the stocks listed were those of communications and utility companies.
+
+![MarketCapBreakdown](figures/MarketCapBreakdown.png)
+
+We also see that the majority of stocks traded are those of small-cap firms.
+
+![MarketCaps](figures/s_caps.png)
+![Mid Caps](figures/m_caps.png)
+![Large Caps](figures/l_caps.png)
+
+Within the overall cap sizes, we can also create a view to see the proportion of sector representation within these cap sizes. Tech dominates across mid and large caps, while a significantly large proportion of small cap stocks come from healthcare firms.
 
 ## Thoughts on Machine Learning
 
