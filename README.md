@@ -21,7 +21,9 @@ After creating a high level overview of the market, we should look to highlight 
 Our original dataset only has Ticker values for each security. To improve the readability, I've brought in a column that has the name of the company associated with each ticker. This can be accomplished using the separate dataframe from EOD Data and performing an INNER join on the Ticker symbol. There is a large amount of missing data in our dataset. Every row has at least one columns with missing information.
 
 ## High Level Snapshot
-![MarketCaps](figures/s_caps.png)(figures/m_caps.png)(figures/l_caps.png)
+![MarketCaps](figures/s_caps.png)
+![Mid Caps](figures/m_caps.png)
+![Large Caps](figures/l_caps.png)
 
 ## Market Sector Breakdown
 ![SectorStockVolum](figures/StockVolume_Sector.png)
