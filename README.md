@@ -18,7 +18,7 @@ After creating a high level overview of the market, we should look to highlight 
 
 ## Transformations
 
-Our original dataset only has Ticker values for each security. To improve the readability, I've brought in a column that has the name of the company associated with each ticker. This can be accomplished using the separate dataframe from EOD Data and performing an INNER join on the Ticker symbol. There is a large amount of missing data in our dataset. Every row has at least one columns with missing information.
+Our original dataset only has Ticker values for each security. To improve the readability, I've brought in a column that has the name of the company associated with each ticker. This can be accomplished using the separate dataframe from EOD Data and performing an INNER join on the Ticker symbol. There is a large amount of missing data in our dataset. Every row has at least one column with missing information.
 
 ## Market Sector Breakdown
 ![SectorStockVolum](figures/StockVolume_Sector.png)
@@ -34,6 +34,12 @@ We also see that the majority of stocks traded are those of small-cap firms.
 ![Large Caps](figures/l_caps.png)
 
 Within the overall cap sizes, we can also create a view to see the proportion of sector representation within these cap sizes. Tech dominates across mid and large caps, while a significantly large proportion of small cap stocks come from healthcare firms.
+
+## Correlation Analysis
+
+![Corr](figures/correlations.png)
+A colored heatmap allows us to quickly get a visual sense of some of the existing relationships between our features. It is important to see how they interact with each other to gain an understanding of each.
+
 
 ## Thoughts on Machine Learning
 
