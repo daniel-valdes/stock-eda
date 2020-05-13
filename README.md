@@ -1,5 +1,5 @@
 # EDA on Publicly Traded Stocks (2014-2018)
-**Tools used**: \ 
+**Tools used**:
 Python, Pandas, SeaBorn, Sci-Kit Learn, Yahoo Finance API
 
 **Datasets used**: \
@@ -36,7 +36,6 @@ We also see that the majority of stocks traded are those of small-cap firms.
 Within the overall cap sizes, we can also create a view to see the proportion of sector representation within these cap sizes. Tech dominates across mid and large caps, while a significantly large proportion of small cap stocks come from healthcare firms.
 
 ## CORRELATION ANALYSIS
-
 ![Corr](figures/correlations.png)
 A colored heatmap allows us to quickly get a visual sense of some of the existing relationships between our features. It is important to see how they interact with each other to gain an understanding of each. Large swaths of the diagram are black meaning some variables are completely uncorrelated with each other.
 
@@ -45,7 +44,10 @@ A colored heatmap allows us to quickly get a visual sense of some of the existin
 
 There is a column in our dataset *PRICE VAR [%]* that tells us how the adjusted closing price for the stock shifted for the following year. We can set this to be our target variable *Y* for machine learning purposes. Due to the large amount of features we have to choose from, a neural network may perform well here to learn which features can predict *Y* best. Of course, regression models can work as well, but the data is not linear and the features are highly collinear so more robust methods would be required (Random Forest, Polynomial functions, etc).
 
-We also have a variable *Class* that has a value of 0 or 1 for each record. 1 represents "Buy" and is assigned to stocks who had a positive price variance from the previous year. Those stocks with negative price gains are assigned a 0 and can be thought of as "Don't Buy/Sell". This simple binary classification method means we can train a logistic model and see if we can classify a stock in this way.
+We also have a variable *Class* that has a value of 0 or 1 for each record. 1 represents "Buy" and is assigned to stocks who had a positive price variance from the previous year. Those stocks with negative price gains are assigned a 0 and can be thought of as "Don't Buy/Sell". This simple binary classification method means we can train a logistic model and see if we can classify a stock in this way. 
+
+Using Sci-Kit Learn we can assemble a logistic regression model and fit it to the data selecting for the optimal features using the ```SelectKBest``` method. With 18 features we achieve a score of around .70 which is fairly good for a first attempt.
+![Score](figures/log_classif_report.png)
 
 
 ## MARKOWITZ PORTFOLIO OPTIMIZATION
