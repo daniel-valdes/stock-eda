@@ -35,6 +35,16 @@ We also see that the majority of stocks traded are those of small-cap firms.
 
 Within the overall cap sizes, we can also create a view to see the proportion of sector representation within these cap sizes. Tech dominates across mid and large caps, while a significantly large proportion of small cap stocks come from healthcare firms.
 
+## NOTABLE PERFORMERS
+
+Using pandas indexing we can isolate some the best and worst performers of 2019. With ```market.sort_values(by='2019 PRICE VAR [%]')[['Company Name','2019 PRICE VAR [%]']].head()``` we pull out the five worst stock performances of 2019. These should be avoided at all costs moving forward.
+![worst](figures/worst.png)
+
+By altering the method slightly we can sort in descending order and see top performers.
+![best](figures/best.png)
+Above and beyond the best performer of the set was Axsome Thera pharmaceuticals. The stock saw a 3600% explosion in its price in 2019 and shows signs of continuing to grow.
+
+
 ## CORRELATION ANALYSIS
 ![Corr](figures/correlations.png)
 A colored heatmap allows us to quickly get a visual sense of some of the existing relationships between our features. It is important to see how they interact with each other to gain an understanding of each. Large swaths of the diagram are black meaning some variables are completely uncorrelated with each other.
