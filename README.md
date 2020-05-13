@@ -38,21 +38,23 @@ Within the overall cap sizes, we can also create a view to see the proportion of
 ## CORRELATION ANALYSIS
 
 ![Corr](figures/correlations.png)
-A colored heatmap allows us to quickly get a visual sense of some of the existing relationships between our features. It is important to see how they interact with each other to gain an understanding of each. 
+A colored heatmap allows us to quickly get a visual sense of some of the existing relationships between our features. It is important to see how they interact with each other to gain an understanding of each. Large swaths of the diagram are black meaning some variables are completely uncorrelated with each other.
 
 
 ## THOUGHTS ON MACHINE LEARNING
 
-There is a column in our dataset PRICE VAR [%] that tells us how the adjusted closing price for the stock shifted for the following year. We can set this to be our target variable *Y* for machine learning purposes. Due to the large amount of features we have to choose from, a neural network may perform well here to learn which features can predict *Y* best. Of course, linear regression can work as well.
+There is a column in our dataset *PRICE VAR [%]* that tells us how the adjusted closing price for the stock shifted for the following year. We can set this to be our target variable *Y* for machine learning purposes. Due to the large amount of features we have to choose from, a neural network may perform well here to learn which features can predict *Y* best. Of course, regression models can work as well, but the data is not linear and the features are highly collinear so more robust methods would be required (Random Forest, Polynomial functions, etc).
+
+We also have a variable *Class* that has a value of 0 or 1 for each record. 1 represents "Buy" and is assigned to stocks who had a positive price variance from the previous year. Those stocks with negative price gains are assigned a 0 and can be thought of as "Don't Buy/Sell". This simple binary classification method means we can train a logistic model and see if we can classify a stock in this way.
 
 
 ## MARKOWITZ PORTFOLIO OPTIMIZATION
 
-The Markowitz model provides us an intuitive framework with which we can analyze stock portfolios. The theory is that through the minimization of risk or internal correlation of a portfolio, one can find an efficient combination of stocks that mitigates volatility and optimizes returns. Markowitz developed the idea of an *efficient frontier* meaning that for a portfolio of stocks with a given volatility, there exists one that can potentially issue higher returns for the same amount of risk.
+The Markowitz model provides us an intuitive framework with which we can analyze stock portfolios. The theory is that through the minimization of risk or internal correlation of a portfolio, one can find an efficient combination of stocks that mitigates volatility and optimizes returns. Markowitz developed the idea of an *efficient frontier* meaning that for a portfolio of stocks with a given volatility, there exists one that can potentially issue higher returns for the same amount of risk. Using the Yahoo Finance API, we can find the historical returns over a given time period for a few selected stocks from our dataset.
 
 ![diverse](figures/diverse.gif)
 
-If we simulate a diverse portfolio composed of a general representation of the whole market, we can see the efficient frontier take shape. Higher volatility portfolios will yield higher returns. Consequently, higher returns are possible for the same amount of risk depending on the weighting of the portfolio
+If we simulate a diverse portfolio composed of a general representation of the whole market, we can see the efficient frontier take shape. Higher volatility portfolios will yield higher returns. Consequently, higher returns are possible for the same amount of risk depending on the weighting of the portfolio. Each point we hover over shows us a unique portfolio with a different weighting of each stock.
 
 ![tech](figures/tech.gif)
 
