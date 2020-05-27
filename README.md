@@ -39,7 +39,6 @@ Within the overall cap sizes, we can also create a view to see the proportion of
 
 Using pandas indexing we can isolate some the best and worst performers of 2019. With ```market.sort_values(by='2019 PRICE VAR [%]')[['Company Name','2019 PRICE VAR [%]']].head()``` we pull out the five worst stock performances of 2019. These should be avoided at all costs moving forward.
 ![worst](figures/worst.png)
-
 By altering the method slightly we can sort in descending order and see top performers.
 ![best](figures/best.png)
 Above and beyond the best performer of the set was Axsome Thera pharmaceuticals. The stock saw a 3600% explosion in its price in 2019 and shows signs of continuing to grow.
